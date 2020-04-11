@@ -1,5 +1,7 @@
 ---
 title: "NOAAPackage"
+author: PG
+date: "2020-04-11"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{NOAAPackage}
