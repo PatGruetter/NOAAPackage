@@ -24,15 +24,17 @@ First, let's load the necessary packages:
 
 ```{r, message=FALSE}
 library(NOAAPackage)
-library(tidyverse)
+library(dplyr)
+library(stringr)
+library(ggplot2)
 ```
 
 Data can be read into R using the function *noaa_read()*:
 
 ```{r}
 noaa_data <- noaa_read(system.file("extdata",
-                                   "NOAA Significant Earthquake Database.txt",
-                                   package ="NOAAPackage"))
+                                   "NOAA_Significant_Earthquake_Database.txt",
+                                   package = "NOAAPackage"))
 ```
 
 The data set needs to be cleaned using the function *eq_clean_data()* so that the data can later be used with the provided geoms and functions for visualizations and map plots.
