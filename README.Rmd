@@ -1,6 +1,5 @@
 ---
 output: github_document
-always_allow_html: true
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -78,18 +77,18 @@ ggplot(data = usa_data) +
     theme(legend.position="bottom")
 ```
 
-Earthquakes can also be shown on a map using the NOAA package functions for data cleaning, i.e. *eq_clean_data()* as well as the function to display the earthquake locations on a map, i.e. *eq_map()*. If you click on one of the locations, the date of the earthquake pops up.
+Earthquakes can also be shown on a map using the NOAA package functions for data cleaning, i.e. *eq_clean_data()* as well as the function to display the earthquake locations on a map, i.e. *eq_map()*. If you click on one of the locations, the date of the earthquake pops up. Note that the map is not shown in this README document.
 
-```{r, fig.height=6, fig.width=7}
+```{r, eval=FALSE}
 noaa_data %>%
     eq_clean_data() %>%
     dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>% 
     eq_map(annot_col = "DATE")
 ```
 
-To receive more information about the event such as location, magnitude and total deaths - in case the information is available - you can use the function *eq_create_label()* as shown in the following example:
+To receive more information about the event such as location, magnitude and total deaths - in case the information is available - you can use the function *eq_create_label()* as shown in the following example. Note that the map is not shown in this README document.
 
-```{r, fig.height=6, fig.width=7}
+```{r, eval=FALSE}
 noaa_data %>%
     eq_clean_data() %>% 
     dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>% 
