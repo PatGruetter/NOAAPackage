@@ -47,6 +47,16 @@ GeomTimeline <- ggplot2::ggproto("GeomTimeline", ggplot2::GeomPoint,
 
 #' Building geom_timeline
 #'
+#' @param mapping Internal parameter needed for the geom
+#' @param data Internal parameter needed for the geom
+#' @param stat Internal parameter needed for the geom
+#' @param position Internal parameter needed for the geom
+#' @param show.legend Internal parameter needed for the geom
+#' @param na.rm Internal parameter needed for the geom
+#' @param inherit.aes Internal parameter needed for the geom
+#' @param size Internal parameter needed for the geom
+#' @param ... Internal parameter needed for the geom
+#'
 #' @examples
 #' \dontrun{
 #' ggplot(data = usa_data) +
@@ -123,6 +133,15 @@ GeomTimelineLabel <- ggplot2::ggproto("GeomTimelineLabel", ggplot2::Geom, #ggplo
 )
 
 #' Building geom_timeline_label
+#'
+#' @param mapping Internal parameter needed for the geom
+#' @param data Internal parameter needed for the geom
+#' @param stat Internal parameter needed for the geom
+#' @param position Internal parameter needed for the geom
+#' @param show.legend Internal parameter needed for the geom
+#' @param na.rm Internal parameter needed for the geom
+#' @param inherit.aes Internal parameter needed for the geom
+#' @param ... Internal parameter needed for the geom
 #'
 #' @examples
 #' \dontrun{

@@ -16,6 +16,25 @@ geom_timeline(
   ...
 )
 }
+\arguments{
+\item{mapping}{Internal parameter needed for the geom}
+
+\item{data}{Internal parameter needed for the geom}
+
+\item{stat}{Internal parameter needed for the geom}
+
+\item{position}{Internal parameter needed for the geom}
+
+\item{show.legend}{Internal parameter needed for the geom}
+
+\item{na.rm}{Internal parameter needed for the geom}
+
+\item{inherit.aes}{Internal parameter needed for the geom}
+
+\item{size}{Internal parameter needed for the geom}
+
+\item{...}{Internal parameter needed for the geom}
+}
 \description{
 Building geom_timeline
 }
