@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # NOAAPackage
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.org/PatGruetter/NOAAPackage.svg?branch=master)](https://travis-ci.org/PatGruetter/NOAAPackage)
 <!-- badges: end -->
 
 The goal of NOAAPackage is to display information on destructive earthquakes from 2150 B.C. to the present provided by the National Centers For Environmental Information on [https://www.ngdc.noaa.gov](https://www.ngdc.noaa.gov).

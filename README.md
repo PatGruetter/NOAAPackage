@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.org/PatGruetter/NOAAPackage.svg?branch=master)](https://travis-ci.org/PatGruetter/NOAAPackage)
 <!-- badges: end -->
 
 The goal of NOAAPackage is to display information on destructive
