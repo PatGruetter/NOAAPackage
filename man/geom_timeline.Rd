@@ -16,15 +16,6 @@ geom_timeline(
   ...
 )
 }
-\arguments{
-\item{size}{size of the points (optional parameter)}
-
-\item{x}{Varaibel displayed on the x-axis, i.e. Date}
-
-\item{alpha}{transparancy of the points (optional parameter)}
-
-\item{color}{color of the points (optional parameter)}
-}
 \description{
 Building geom_timeline
 }

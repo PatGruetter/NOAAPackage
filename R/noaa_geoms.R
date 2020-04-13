@@ -47,11 +47,6 @@ GeomTimeline <- ggplot2::ggproto("GeomTimeline", ggplot2::GeomPoint,
 
 #' Building geom_timeline
 #'
-#' @param x Varaibel displayed on the x-axis, i.e. Date
-#' @param alpha transparancy of the points (optional parameter)
-#' @param color color of the points (optional parameter)
-#' @param size size of the points (optional parameter)
-#'
 #' @examples
 #' \dontrun{
 #' ggplot(data = usa_data) +
@@ -128,11 +123,6 @@ GeomTimelineLabel <- ggplot2::ggproto("GeomTimelineLabel", ggplot2::Geom, #ggplo
 )
 
 #' Building geom_timeline_label
-#'
-#' @param x Variable displayed on the x-axis, i.e. Date
-#' @param label Location name
-#' @param size Variable representing the size (magnitude) of the earthquake, i.e. EQ_PRIMARY
-#' @param n_max Amount of the largest earthquakes that should be labled (optional parameter)
 #'
 #' @examples
 #' \dontrun{

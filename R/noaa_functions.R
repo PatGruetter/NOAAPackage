@@ -31,27 +31,6 @@ noaa_read <- function(filename) {
 }
 
 
-
-#' Check if lubridate is installed
-#'
-#' This function installs and loads the lubridate package in case is has not been downloaded and loaded
-#'
-#' @return This function installs and loads the lubridate package in case is has not been downloaded and loaded
-#'
-#' @examples
-#' \dontrun{
-#' check_lubridate()
-#' }
-#'
-check_lubridate <- function() {
-    if(!require(lubridate)) {
-        message("installing the 'lubridate' package")
-        install.packages("lubridate")
-    }
-    if(!require(lubridate))
-        stop("the 'lubridate' package needs to be installed first")
-}
-
 #' Clean column LOCATION_NAME of the NOAA Significant Earthquake Database data
 #'
 #' This function takes the NOAA Significant Earthquake Database data as input and cleans the LOCATION_NAME by eliminating the country name
@@ -98,7 +77,6 @@ eq_location_clean <- function(dataset) {
 #'
 #' @export
 eq_clean_data <- function(dataset) {
-    check_lubridate()
     dataset %>%
         dplyr::mutate(BC = ifelse(YEAR<0,1,0),
                       YEAR = abs(YEAR),

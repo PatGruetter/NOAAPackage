@@ -15,15 +15,6 @@ geom_timeline_label(
   ...
 )
 }
-\arguments{
-\item{x}{Variable displayed on the x-axis, i.e. Date}
-
-\item{label}{Location name}
-
-\item{size}{Variable representing the size (magnitude) of the earthquake, i.e. EQ_PRIMARY}
-
-\item{n_max}{Amount of the largest earthquakes that should be labled (optional parameter)}
-}
 \description{
 Building geom_timeline_label
 }

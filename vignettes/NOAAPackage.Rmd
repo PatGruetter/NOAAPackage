@@ -22,11 +22,12 @@ The package contains a function to read the data and another one to clean to cle
 
 First, let's load the necessary packages:
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 library(NOAAPackage)
 library(dplyr)
 library(stringr)
 library(ggplot2)
+library(lubridate)
 ```
 
 Data can be read into R using the function *noaa_read()*:
