@@ -12,7 +12,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' noaa_data %>%
+#' noaa_read("NOAA Significant Earthquake Database.txt") %>%
 #' eq_clean_data() %>%
 #' dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
 #' eq_map(annot_col = "DATE")
@@ -40,7 +40,7 @@ eq_map <- function(dataframe, annot_col) {
 #'
 #' @examples
 #' \dontrun{
-#' noaa_data %>%
+#' noaa_read("NOAA Significant Earthquake Database.txt") %>%
 #' eq_clean_data() %>%
 #' dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
 #' dplyr::mutate(popup_text = eq_create_label(.)) %>%

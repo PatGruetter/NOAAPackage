@@ -46,7 +46,8 @@ noaa_read <- function(filename) {
 #'
 #' @examples
 #' \dontrun{
-#' eq_location_clean(NOAA_dataset)
+#' noaa_read("NOAA Significant Earthquake Database.txt") %>%
+#' eq_location_clean()
 #' }
 
 eq_location_clean <- function(dataset) {
@@ -72,7 +73,8 @@ eq_location_clean <- function(dataset) {
 #'
 #' @examples
 #' \dontrun{
-#' eq_clean_data(NOAA_dataset)
+#' noaa_read("NOAA Significant Earthquake Database.txt") %>%
+#' eq_clean_data()
 #' }
 #'
 #' @export

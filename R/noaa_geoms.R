@@ -59,7 +59,10 @@ GeomTimeline <- ggplot2::ggproto("GeomTimeline", ggplot2::GeomPoint,
 #'
 #' @examples
 #' \dontrun{
-#' ggplot(data = usa_data) +
+#' noaa_read("NOAA Significant Earthquake Database.txt") %>%
+#' eq_clean_data() %>%
+#' filter(str_trim(COUNTRY) %in% c("USA") & DATE %in% c(ymd("2000-01-01"):ymd("2017-01-01"))) %>%
+#' ggplot() +
 #' geom_timeline(aes(x = DATE, color = DEATHS, size=EQ_PRIMARY), alpha=0.6)
 #' }
 #'
@@ -145,7 +148,10 @@ GeomTimelineLabel <- ggplot2::ggproto("GeomTimelineLabel", ggplot2::Geom, #ggplo
 #'
 #' @examples
 #' \dontrun{
-#' ggplot(data = usa_data) +
+#' noaa_read("NOAA Significant Earthquake Database.txt") %>%
+#' eq_clean_data() %>%
+#' filter(str_trim(COUNTRY) %in% c("USA") & DATE %in% c(ymd("2000-01-01"):ymd("2017-01-01"))) %>%
+#' ggplot() +
 #' geom_timeline(aes(x = DATE, color = DEATHS, size=EQ_PRIMARY), alpha=0.6) +
 #' geom_timeline_label(aes(label = LOCATION_NAME, x = DATE, size=EQ_PRIMARY, n_max = 4)) +
 #' labs(size = "Richter scale value", color = "# DEATHS") +
