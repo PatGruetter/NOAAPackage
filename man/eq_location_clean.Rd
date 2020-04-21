@@ -18,6 +18,7 @@ and the colon.
 }
 \examples{
 \dontrun{
-eq_location_clean(NOAA_dataset)
+noaa_read("NOAA Significant Earthquake Database.txt") \%>\%
+eq_location_clean()
 }
 }

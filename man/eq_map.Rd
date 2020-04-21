@@ -17,7 +17,7 @@ an earthquake.
 }
 \examples{
 \dontrun{
-noaa_data \%>\%
+noaa_read("NOAA Significant Earthquake Database.txt") \%>\%
 eq_clean_data() \%>\%
 dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) \%>\%
 eq_map(annot_col = "DATE")

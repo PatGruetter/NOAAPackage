@@ -17,7 +17,8 @@ This function takes the NOAA Significant Earthquake Database data as input and g
 }
 \examples{
 \dontrun{
-eq_clean_data(NOAA_dataset)
+noaa_read("NOAA Significant Earthquake Database.txt") \%>\%
+eq_clean_data()
 }
 
 }

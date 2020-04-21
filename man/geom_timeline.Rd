@@ -40,7 +40,10 @@ Building geom_timeline
 }
 \examples{
 \dontrun{
-ggplot(data = usa_data) +
+noaa_read("NOAA Significant Earthquake Database.txt") \%>\%
+eq_clean_data() \%>\%
+filter(str_trim(COUNTRY) \%in\% c("USA") & DATE \%in\% c(ymd("2000-01-01"):ymd("2017-01-01"))) \%>\%
+ggplot() +
 geom_timeline(aes(x = DATE, color = DEATHS, size=EQ_PRIMARY), alpha=0.6)
 }
 
